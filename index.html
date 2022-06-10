@@ -1,3 +1,118 @@
-<img src=""
-<h1>大見出し</h1>
-<p>文章をここに入力</p>
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>HTMLタグ練習</title>
+    <meta name="description" content="HTMLの練習用です">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <img src="img/HTMLの練習.png" width="300" height="50" alt="ロゴ">
+    <h1>HTMLをいろいろ試してみる</h1>
+    <p>下にいろいろできることを記載</p>
+    
+    <!-- ページ内リンク_各項目へ -->
+    <ul>
+      <li><a href="#midasi1">見出し1へ</a></li>
+      <li><a href="#midasi2">見出し2へ</a></li>
+    </ul>
+    
+    <!-- 文字の強調 -->
+    <p><strong>強調</strong></p>
+    
+    <!-- 引用 -->
+    <blockquote cite="https://www.blogging-life.com/blockquote-and-cite-in-html5/">
+      <p>引用</p>
+    </blockquote>
+
+    <!-- 話題転換時 -->
+    話題1
+    <hr>
+    話題2
+
+    <!-- 改行 -->
+    <p>
+      行1<br>
+      行2<br>
+      行3
+    </p>
+    
+    <!-- 改行などをそのまま表示 -->
+    <pre>
+    行1<br>
+    行2<br>
+    行3  
+    </pre>
+
+    <!-- 文中にタグを表示(実体参照) -->
+    <p>&lt;br&gt;タグを表示したいときとか</p>
+
+    <!-- 箇条書きリスト -->
+    <ul>
+      <li>項目1</li>
+      <li>項目2</li>
+      <li>項目3</li>
+    </ul>
+
+    <!-- 順序付きリスト -->
+    <ol>
+      <li>項目1</li>
+      <li>項目2</li>
+      <li>項目3</li>
+    </ol>
+
+    <!-- 説明リスト -->
+    <dl>
+      <dt>項目1</dt>
+      <dd>文章1</dd>
+      <dt>項目2</dt>
+      <dd>文章2</dd>
+    </dl>
+
+    <!-- 表 -->
+    <table>
+      <thead>
+        <tr>
+          <th>大項目</th>
+          <th>中項目</th>
+          <th>小項目</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>りんご</td>
+          <td>100円</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>みかん</td>
+          <td>200円</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 外部リンク -->
+    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element" target="_blank">MDN(別タブ)</a><br>
+    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element">MDN(同タブ)</a><br>
+
+    <!-- 別ページへのリンク -->
+    <a href="page1.html">区切りタブの練習</a><br>
+    <a href="buhin.html">フォーム部品の練習</a><br>
+    <a href="folder1/index.html">他階層の別ページ</a><br>
+
+    <!-- ページ内リンク_TOPへ -->
+    <ul>
+      <li><a href="#">一番上に戻る1</a></li>
+      <li><a href="#top">一番上に戻る2</a></li>
+    </ul>
+
+
+    <h2 id="midasi1">見出し1</h2>
+    <p>文章1</p>
+    
+    <h2 id="midasi2">見出し2</h2>
+    <p>文章2</p>
+  </body>
+</html>
+
