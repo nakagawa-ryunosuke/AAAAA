@@ -21,6 +21,59 @@
     <!-- ラベルと入力欄を一緒に書く -->
     <label>名前 <input type="text"></label><br>
 
+    <label for="drop">▼ドロップダウンリスト</label><br>
+    <!-- 
+      表示する項目数 size=""
+      複数選択 multiple 
+      初期選択項目 selected
+    -->
+    <select id="drop" size="4" multiple>
+      <option>項目1</option>
+      <option>項目2</option>
+      <option selected>項目3</option>
+      <option>項目4</option>
+      <option>項目5</option>
+      <option>項目6</option>
+    </select>
+
+    <!-- あらかじめチェック checked -->
+    <p>▼チェックボックス</p>
+    <fieldset>
+      <legend>チェックボックス名称</legend>
+      <label><input type="checkbox"> 項目1</label>
+      <label><input type="checkbox" checked> 項目2</label>
+      <label><input type="checkbox"> 項目3</label>
+    </fieldset>
+    
+    <!-- ラジオボタン -->
+    <fieldset>
+      <legend>ラジオボタン名称</legend>
+      <label><input type="radio" name="same"> 項目1</label>
+      <label><input type="radio" name="same" checked> 項目2</label>
+      <label><input type="radio" name="same"> 項目3</label>
+    </fieldset>
+
+    <!-- HTML5で使える入力部品 -->
+    <p>色 <input type="color"></p>
+    <p>日付 <input type="date"></p>
+    <p>カウント <input type="number"></p>
+    <p>バー <input type="range"></p>
+
+    <!-- ボタン -->
+    <p>▼アクティブボタン</p>
+    <input type="button" value="OK">
+    <button>OK</button>
+    
+    <p>▼非アクティブボタン</p>
+    <input type="button" value="OK" disabled>
+    <button disabled>OK</button>
+
+    <!-- formタグ -->
+    <form action="aaa.php" method="post">
+      <label>名前<input type="text" name="username"></label>
+      <label>内容<input type="text" name="aaa"></label>
+      <button>送信</button>
+    </form>
 
     <footer>
       <a href="index.html">元のページに戻る</a>
